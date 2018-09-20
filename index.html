@@ -1,0 +1,19 @@
+---
+layout: blog
+title: index
+permalink: /
+---
+{% for post in site.posts %}
+<div class="row">
+  <a href="{{ post.url | prepend: site.baseurl }}">
+    <div class="post-card">
+      <div class="post-content">
+        <span class="post-title">{{ post.title }}</span><br>
+        <span class="post-date">{{ post.date | date_to_string }},</span>
+        <span class="post-author">{{ post.author }}</span>
+        <p class="post-description">{{ post.description }}</p>
+      </div>
+    </div>
+  </a>
+</div>
+{% endfor %}

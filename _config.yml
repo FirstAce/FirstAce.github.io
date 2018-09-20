@@ -1,0 +1,9 @@
+title: 퍼스트에이스 기술 블로그
+description: 퍼스트에이스의 기술 블로그입니다.
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
